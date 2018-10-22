@@ -99,9 +99,9 @@ body{
 .serviceSection .imgBox .overlay{
     position: absolute;
     top: 85px;
-    left: 72px;
+    left: 73px;
     background-color: rgba(0, 0, 0, 0.4);
-    width: 293px;
+    width: 294px;
     height: 520px;
 }
 .serviceSection .imgBox img{
