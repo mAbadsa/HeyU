@@ -1,13 +1,40 @@
 $(document).ready(function(){
    var scrollTop = 0;
+    var body = $("body");
     $(document).scroll(function (){
         scrollTop = $(window).scrollTop();
-        if(scrollTop > 0){
-            $('.navbar').addClass('scrollNav');
+        if(scrollTop > 100){
+            $('.mainnavbar').addClass('scrollNav');
+            body.animate({
+                scrollTop:0
+            }, '500');
         } else if(scrollTop <= 0) {
-            $('.navbar').removeClass('scrollNav');
+            $('.mainnavbar').removeClass('scrollNav');
         }
     });
+     /******************************
+        BOTTOM SCROLL TOP BUTTON
+      ******************************/
+     $(window).scroll(function() {
+        // declare variable
+        var topPos = $(this).scrollTop();
+
+        // if user scrolls down - show scroll to top button
+        if (topPos > 500) {
+          $("#btnUp").css("opacity", "1");
+            $("#btnUp").css("display", "block");
+
+        } else {
+          $("#btnUp").css("opacity", "0");
+        }
+
+    });
+    $("#btnUp").click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 800);
+        return false;
+    })
 });
 
 var video = document.querySelector('.video');
@@ -25,24 +52,26 @@ function togglePlayPause() {
         video.play();
     } else {
         btn.className = "play";
-        overlay.style.opacity = "0.4";
+        overlay.style.opacity = "1";
         video.pause();
     }
 }
-$(document).ready(function(){
-    if(video.play){
+$(document).ready(function() {
+    var stopVideo =
+            $("#play-pause").css("opacity", "1").css("transitionDuration", "0.6s");
+    if(video.play) {
         $(".c-video").mouseover(function(){
-            $("#play-pause").css("opacity", "1").css("transitionDuration", "0.4s");
+            $("#play-pause").css("opacity", "1").css("transitionDuration", "0.6s");
         });
         $(".c-video").mouseout(function(){
-            $("#play-pause").css("opacity", "0").css("transitionDuration", "0.4s");
+            $("#play-pause").css("opacity", "0").css("transitionDuration", "0.6s");
         });
-    }else{
-        $(".c-video").mouseover(function(){
-            $("#play-pause").css("opacity", "1").css("transitionDuration", "0.4s");
-        });
+    } else if (video.pause){
         $(".c-video").mouseout(function(){
-            $("#play-pause").css("opacity", "1").css("transitionDuration", "0.4s");
+            $("#play-pause").css("opacity", "1").css("transitionDuration", "0.6s");
+        });
+        $(".c-video").mouseover(function(){
+            $("#play-pause").css("opacity", "1").css("transitionDuration", "0.6s");
         });
     }
     
@@ -69,3 +98,4 @@ video.addEventListener('timeupdate', function(){
 //        btn.style.opacity = "1";
 //    }
 //});
+
