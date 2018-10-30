@@ -180,7 +180,7 @@
         <div class="absoluteBg2"></div>
         <div class="container">
             <div class="row ">
-                <div class="col-lg-4 col-sm-8 offset-lg-0 offset-sm-2 align-self-center">
+                <div class="leftSec col-lg-4 col-sm-8 offset-lg-0 offset-sm-2 align-self-center">
                     <div class="row descBox ">
                         <div class="desc col-lg-10 col-sm-10">
                             <h3 class="text-right">Start conversation</h3>
@@ -200,7 +200,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-12 justify-content-center text-center imgBox img-fluid">
+                <div class="immSec col-lg-4 col-sm-12 justify-content-center text-center imgBox img-fluid">
                     <img class="" src="assets/img/iPhone%207%20SilverMod.png" alt="main mobile">
                     <div class="c-video">
                         <video class="video" src="assets/REVIT%20STURCTURE%20COURSE.mp4" poster="assets/img/video%20poster.png"></video>
@@ -216,7 +216,7 @@
                     </div>
 <!--                    <a href="##"><i class="fas fa-play-circle"></i></a>-->
                 </div>
-                <div class="col-lg-4 col-sm-8 offset-lg-0 offset-sm-2 align-self-center">
+                <div class="rightSec col-lg-4 col-sm-8 offset-lg-0 offset-sm-2 align-self-center">
                     <div class="row descBox descBoxRight">
                         <div class="col-lg-2 col-sm-3 icon">
                             <i class="fas fa-camera"></i>
@@ -239,14 +239,14 @@
             </div>
         </div>
     </div>
-        <div class="serviceSectionSm d-lg-none d-md-block">
+<!--    spical design for small screen -->
+     <div class="serviceSectionSm d-lg-none d-md-block">
         <div class="absoluteBgSm"></div>
         <div class="container">
             <div class="row ">
-                <div class="phoneImg col-sm-4 align-self-center">
+                <div class="phoneImg align-self-center">
                     <img class="img-fluid" src="assets/img/iPhone%207%20SilverMod.png" alt="main mobile">
-<!--
-                    <div class="c-video">
+                    <div class="c-videoSm">
                         <video class="video" src="assets/REVIT%20STURCTURE%20COURSE.mp4" poster="assets/img/video%20poster.png"></video>
                         <div class="controls">
                             <div class="progress-bar">
@@ -258,17 +258,16 @@
                             <button id="play-pause"></button>
                         </div>
                     </div>
--->
 <!--                    <a href="##"><i class="fas fa-play-circle"></i></a>-->
                 </div>
-                <div class="dsecSm col-sm-8  my-5 align-self-center">
+                <div class="dsecSm align-self-center">
                     <div class="row descBox">
                         <div class="col-lg-2 col-sm-2 icon">
                             <i class="far fa-comments"></i>
                         </div>
                         <div class="desc col-sm-10">
                             <h3 class="text-left w-100">Start conversation</h3>
-                            <p class="text-left w-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod teampor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="text-left w-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
                         </div>
                     </div>
                     <div class="row descBox">
@@ -277,25 +276,25 @@
                         </div>
                         <div class="desc col-sm-10">
                             <h3 class="text-left">Make a free call</h3>
-                            <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
                         </div>
                     </div>
-                    <div class="row descBox descBoxRight">
+                    <div class="row descBox descBox">
                         <div class="col-sm-2 icon">
                             <i class="fas fa-camera"></i>
                         </div>
                         <div class="desc col-sm-10">
                             <h3 class="text-left">Take a picture</h3>
-                            <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
                         </div>
                     </div>
-                    <div class="row descBox descBoxRight">
+                    <div class="row descBox descBox">
                         <div class="col-sm-2 icon">
                             <i class="fas fa-video"></i>
                         </div>
                         <div class="desc col-sm-10">
                             <h3 class="text-left">Send your video</h3>
-                            <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         </div>
                     </div>
                 </div>
@@ -338,33 +337,26 @@
     <!--Download section end-->
     
     <footer class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavBottom" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavBottom">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Support</a>
-              </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">download</a>
-              </li>
-                <select class="ml-auto">
+        <ul class="nav">
+            <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">download</a>
+          </li>
+            <select class="ml-auto">
                 <option>English</option>
             </select>
-            </ul>
-          </div>
-        </nav>
+        </ul>
     </footer>
     <script src="assets/js/jquery-1.12.4.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
